@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/sandwich"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/action_card"
+            style="?attr/borderlessButtonStyle"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:gravity="center_horizontal"
+            android:minWidth="32dp"
+            android:padding="16dp"
+            android:text="@string/card_title"
+            android:textColor="@color/colorAccent"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/action_cash"
+            style="?attr/borderlessButtonStyle"
+            android:layout_gravity="end"
+            android:gravity="center_horizontal"
+            android:minWidth="32dp"
+            android:padding="16dp"
+            android:text="@string/cash_title"
+            android:textColor="@color/colorAccent"
+            android:layout_toStartOf="@id/action_card"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/action_coupon"
+            style="?attr/borderlessButtonStyle"
+            android:layout_gravity="end"
+            android:gravity="center_horizontal"
+            android:minWidth="32dp"
+            android:padding="16dp"
+            android:text="@string/coupon_title"
+            android:textColor="@color/colorAccent"
+            android:layout_toStartOf="@id/action_cash"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
