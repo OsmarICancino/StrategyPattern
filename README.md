@@ -8,7 +8,7 @@ This project is build using the Strategy and Singleton Pattern. We created a pay
 
 For each method, the Strategy Pattern executes a task to calculate the final price of the products.
 
-The Singleron pattern management the unique price of the ficticious product to pay.
+The Singleton pattern management the unique price of the ficticious product to pay.
 
 Created by
 --------------------
